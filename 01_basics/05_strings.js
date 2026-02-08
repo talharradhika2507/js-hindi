@@ -13,7 +13,6 @@ const Name = "Radhika_hide_and_sick"
 // console.log(gameName.toUpperCase());
 // console.log(gameName.charAt(8));
 // console.log(gameName.indexOf("R"));
-
 //const Name = new String("Anchanesh")
 
 const NewString = Name.substring(0, 5)

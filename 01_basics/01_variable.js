@@ -12,6 +12,6 @@ accontstate=
 
 console.log(accountEmail);
 
-//console.table([accountEmail,accountPassword,accountCity,accontstate]);
+console.table([accountEmail,accountPassword,accountCity,accontstate,accountID]);
 
 

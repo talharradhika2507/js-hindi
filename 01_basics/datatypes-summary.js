@@ -1,6 +1,6 @@
-// Primitive
+//Primitive            //Non Primitive
 
-const { PureComponent } = require("react");
+// Primitive
 
 // 7 types : String, Number, Boolean, null, undefined , Symbol, BigInt
 
@@ -8,37 +8,62 @@ const { PureComponent } = require("react");
 //This means that you do not need to explicitly declare the data type of a variable, 
 //and the same variable can hold values of different types during the program's execution
 
-const score = 100
-const scorevalue = 100.3
+// const score = 100
+// const scorevalue = 100.3
 
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail; //undefined
+// const isLoggedIn = false
+// const outsideTemp = null
+// let userEmail; //undefined
 
-const id= Symbol("123")
-const anotherId = Symbol("123")
-console.log(id==anotherId)
+// const id= Symbol("123")
+// const anotherId = Symbol("123")
+// console.log(id==anotherId)
 
-//const BigInt = 123434556789456787n
+// //const BigInt = 123434556789456787n
 
 
-// Referance type(Non Primitive)
-//directly allocate the reference in the memory.
+// // Referance type(Non Primitive)
+// //directly allocate the reference in the memory.
 
-// Arrays, Objects, Functions
-//Arrays
-const City = [Amravati, Nashik, Pune, Mumbai];
+// // Arrays, Objects, Functions
+// //Arrays
+// const City = [Amravati, Nashik, Pune, Mumbai];
 
-//Objects
-const myObj ={
-    name: "Radhika",
-    age: 24,
+// //Objects
+// const myObj ={
+//     name: "Radhika",
+//     age: 24,
+// }
+
+// //Funtion
+// const myFunction = Function()
+// {
+//     console.log("hello World"); 
+// }
+
+// console.log(typeof BigInt);
+
+//*************************************************************************************************************
+
+//Stack (Primitive)    Heap (Non Primitive)
+
+let myfirstOffice = "TCS"
+let mySecondOffice = myfirstOffice
+mySecondOffice = "Wipro"
+
+console.log(myfirstOffice);
+console.log(mySecondOffice);
+
+//Stack is copying the data ..its not directly allocate from reference 
+
+let userone = {
+    Name:"Radhika",
+    Id:25,
 }
+let usertwo = userone
 
-//Funtion
-const myFunction = Function()
-{
-    console.log("hello World"); 
-}
+usertwo.Name = "Anchanesh"
+console.log(userone.Name);
+console.log(usertwo.Name);
+                    
 
-console.log(typeof BigInt);
